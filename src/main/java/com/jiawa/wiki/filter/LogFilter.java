@@ -12,7 +12,7 @@ import java.io.IOException;
  * @author Songguo
  * @date 2024/3/17 11:47
  */
-@Component
+/*@Component
 public class LogFilter implements Filter {
      private static final Logger LOG = LoggerFactory.getLogger(LogFilter.class);
 
@@ -33,4 +33,4 @@ public class LogFilter implements Filter {
          filterChain.doFilter(servletRequest, servletResponse);
          LOG.info("------------- LogFilter 结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
      }
-}
+}*/

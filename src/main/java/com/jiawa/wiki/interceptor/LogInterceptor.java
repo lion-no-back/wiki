@@ -1,6 +1,5 @@
 package com.jiawa.wiki.interceptor;
 
-import com.jiawa.wiki.filter.LogFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -15,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2024/3/17 12:03
  * @desc 拦截器：Spring框架特有的，常用于登录校验，权限校验，请求日志打印
  */
-@Component
+/*@Component
 public class LogInterceptor implements HandlerInterceptor {
-    private static final Logger LOG = LoggerFactory.getLogger(LogFilter.class);
+    private static final Logger LOG = LoggerFactory.getLogger(LogInterceptor.class);
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -36,4 +35,4 @@ public class LogInterceptor implements HandlerInterceptor {
         long startTime = (Long) request.getAttribute("requestStartTime");
         LOG.info("------------- LogInterceptor 结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
     }
-}
+}*/
