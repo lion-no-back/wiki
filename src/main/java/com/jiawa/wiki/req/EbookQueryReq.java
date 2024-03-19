@@ -4,7 +4,7 @@ package com.jiawa.wiki.req;
  * @author Songguo
  * @date 2024/3/11 15:15
  */
-public class EbookReq extends PageReq {
+public class EbookQueryReq extends PageReq {
 
     private Long id;
 
@@ -28,7 +28,7 @@ public class EbookReq extends PageReq {
 
     @Override
     public String toString() {
-        return "EbookReq{" +
+        return "EbookQueryReq{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
