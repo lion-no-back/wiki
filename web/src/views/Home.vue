@@ -23,7 +23,10 @@
     <a-layout-content
           :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
       >
-        <a-list item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks">
+        <div class="welcome" v-show="isShowWelcome">
+          <the-welcome></the-welcome>
+        </div>
+        <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks">
           <template #renderItem="{ item }">
             <a-list-item key="item.name">
               <template #actions>
@@ -87,8 +90,14 @@ export default defineComponent({
       });
     };
 
-    const handleClick = () => {
-      console.log("menu click")
+    const isShowWelcome = ref(true);
+
+    const handleClick = (value: any) => {
+      if (value.key === 'welcome') {
+        isShowWelcome.value = true;
+      } else {
+        isShowWelcome.value = false;
+      }
     };
 
     const pagination = {
@@ -120,7 +129,11 @@ export default defineComponent({
       ebooks,
       pagination,
       actions,
-      level1
+      level1,
+
+      handleClick,
+
+      isShowWelcome
     }
   }
 });
