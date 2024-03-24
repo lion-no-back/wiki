@@ -1,12 +1,16 @@
-package com.jiawa.wiki.domain;
+package com.jiawa.wiki.req;
 
-public class Category {
+import javax.validation.constraints.NotNull;
+
+public class CategorySaveReq {
     private Long id;
 
     private Long parent;
 
+    @NotNull(message = "【名称】不能为空")
     private String name;
 
+    @NotNull(message = "【排序】不能为空")
     private Integer sort;
 
     public Long getId() {

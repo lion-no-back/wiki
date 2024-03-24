@@ -1,6 +1,6 @@
-package com.jiawa.wiki.domain;
+package com.jiawa.wiki.resp;
 
-public class Category {
+public class CategoryQueryResp {
     private Long id;
 
     private Long parent;
