@@ -24,7 +24,7 @@
           :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
       >
         <div class="welcome" v-show="isShowWelcome">
-          <the-welcome></the-welcome>
+          <the-welcome>1111</the-welcome>
         </div>
         <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebooks">
           <template #renderItem="{ item }">
@@ -54,9 +54,13 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import axios from 'axios';
 import { message } from 'ant-design-vue';
 import {Tool} from "@/util/tool";
+import TheWelcome from '@/components/the-welcome.vue';
 
 export default defineComponent({
   name: 'Home',
+  components: {
+    TheWelcome
+  },
   setup() {
     const ebooks = ref();
     // const ebooks1 = reactive({books: []});
@@ -91,47 +95,45 @@ export default defineComponent({
     };
 
     const isShowWelcome = ref(true);
+    let categoryId2 = 0;
+
+    const handleQueryEbook = () => {
+      axios.get("/ebook/list", {
+        params: {
+          page: 1,
+          size: 1000,
+          categoryId2: categoryId2
+        }
+      }).then((response) => {
+        const data = response.data;
+        ebooks.value = data.content.list;
+      });
+    };
 
     const handleClick = (value: any) => {
       if (value.key === 'welcome') {
         isShowWelcome.value = true;
       } else {
+        categoryId2 = value.key;
         isShowWelcome.value = false;
+        handleQueryEbook();
       }
     };
 
-    const pagination = {
-      onChange: (page: number) => {
-        console.log(page);
-      },
-      pageSize: 3,
-    };
-    const actions: Record<string, string>[] = [
-      { type: 'StarOutlined', text: '156' },
-      { type: 'LikeOutlined', text: '156' },
-      { type: 'MessageOutlined', text: '2' },
-    ];
-
     onMounted(() => {
       handleQueryCategory();
-      axios.get("/ebook/list", {
-        params: {
-          page: 1,
-          size: 1000
-        }
-      }).then((response) => {
-        const data = response.data;
-        ebooks.value = data.content.list;
-      })
     });
 
     return {
       ebooks,
-      pagination,
-      actions,
-      level1,
-
+      pagination: {
+        onChange: (page: any) => {
+          console.log(page);
+        },
+        pageSize: 3,
+      },
       handleClick,
+      level1,
 
       isShowWelcome
     }
