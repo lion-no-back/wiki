@@ -74,6 +74,12 @@
       <a-form-item label="顺序">
         <a-input v-model:value="doc.sort" />
       </a-form-item>
+      <a-form-item label="内容">
+        <div id="editor—wrapper">
+          <div id="toolbar-container"><!-- 工具栏 --></div>
+          <div id="editor-container"><!-- 编辑器 --></div>
+        </div>
+      </a-form-item>
     </a-form>
   </a-modal>
 </template>
@@ -84,6 +90,9 @@ import axios from 'axios';
 import { message } from 'ant-design-vue';
 import { Tool } from '@/util/tool';
 import {useRoute} from "vue-router";
+
+import '@wangeditor/editor/dist/css/style.css'
+import { createEditor, createToolbar } from '@wangeditor/editor'
 
 
 export default defineComponent({
@@ -160,6 +169,7 @@ export default defineComponent({
     const doc = ref({});
     const modalVisible = ref(false);
     const modalLoading = ref(false);
+
     const handleModalOk = () => {
       modalLoading.value = true;
       axios.post("/doc/save", doc.value).then((response) => {
@@ -208,7 +218,8 @@ export default defineComponent({
       }
     };
 
-    const ids: Array<string> = [];
+    const deleteIds: Array<string> = [];
+    const deleteNames: Array<string> = [];
     /**
      * 查找整根树枝
      */
@@ -221,7 +232,7 @@ export default defineComponent({
           // 如果当前节点就是目标节点
           console.log("delete", node);
           // 将目标ID放入结果集ids
-          ids.push(id);
+          deleteIds.push(id);
 
 
           // 遍历所有子节点
@@ -254,6 +265,17 @@ export default defineComponent({
 
       // 为选择树添加一个"无"
       treeSelectData.value.unshift({id: 0, name: '无'});
+      setTimeout(function () {
+        // 创建编辑器
+        const editor = createEditor({
+          selector: '#editor-container'
+        })
+        // 创建工具栏
+        const toolbar = createToolbar({
+          editor,
+          selector: '#toolbar-container'
+        })
+      }, 100);
     }
 
     /*
@@ -269,14 +291,30 @@ export default defineComponent({
 
       // 为选择树添加一个"无"
       treeSelectData.value.unshift({id: 0, name: '无'});
+
+      setTimeout(function () {
+        // 创建编辑器
+        const editor = createEditor({
+          selector: '#content'
+        })
+        // 创建工具栏
+        const toolbar = createToolbar({
+          editor,
+          selector: '#content'
+        })
+      }, 100);
     }
 
     /*
     * 删除
     * */
     const handleDelete = (id: number) => {
+      // console.log(level1, level1.value, id)
+      // 清空数组，否则多次删除时，数组会一直增加
+      deleteIds.length = 0;
+      deleteNames.length = 0;
       getDeleteIds(level1.value, id);
-      axios.delete("/doc/delete/" + ids.join(",")).then((response) => {
+      axios.delete("/doc/delete/" + deleteIds.join(",")).then((response) => {
         const data = response.data;
         if (data.success) {
           // 重新加载列表
