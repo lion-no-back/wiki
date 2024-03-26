@@ -1,5 +1,6 @@
 package com.jiawa.wiki.controller;
 
+import com.jiawa.wiki.mapper.ContentMapper;
 import com.jiawa.wiki.req.DocQueryReq;
 import com.jiawa.wiki.req.DocSaveReq;
 import com.jiawa.wiki.resp.DocQueryResp;

@@ -61,7 +61,7 @@
           </a-form>
         </p>
         <a-form :model="doc" layout="vertical">
-          <a-form-item label="名称">
+          <a-form-item>
             <a-input v-model:value="doc.name" placeholder="名称"/>
           </a-form-item>
           <a-form-item>
@@ -101,7 +101,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue';
+import { defineComponent, onMounted, ref} from 'vue';
 import axios from 'axios';
 import { message } from 'ant-design-vue';
 import { Tool } from '@/util/tool';
@@ -175,12 +175,20 @@ export default defineComponent({
     * */
     const treeSelectData = ref();
     treeSelectData.value = [];
-    const doc = ref({});
+    const doc = ref();
+    doc.value = {};
     const modalVisible = ref(false);
     const modalLoading = ref(false);
 
+    let editor: any = {}
+
+    const editorConfig = { placeholder: '请输入内容' };
+
     const handleSave = () => {
       modalLoading.value = true;
+
+      doc.value.content = editor.getHtml();
+
       axios.post("/doc/save", doc.value).then((response) => {
         modalLoading.value = false;
         const data = response.data;
@@ -313,8 +321,9 @@ export default defineComponent({
       handleQuery();
 
       // 创建编辑器
-      const editor = createEditor({
-        selector: '#editor-container'
+      editor = createEditor({
+        selector: '#editor-container',
+        config: editorConfig
       })
       // 创建工具栏
       const toolbar = createToolbar({
@@ -341,13 +350,22 @@ export default defineComponent({
 
       handleDelete,
 
-      treeSelectData
+      treeSelectData,
+
+      editorConfig,
     }
   }
 });
 </script>
 
 <style scoped>
+#editor—wrapper {
+  border: 1px solid #ccc;
+  z-index: 100; /* 按需定义 */
+}
+#toolbar-container { border-bottom: 1px solid #ccc; }
+#editor-container { height: 500px; }
+
 img {
   width: 50px;
   height: 50px;
