@@ -193,7 +193,8 @@ export default defineComponent({
         modalLoading.value = false;
         const data = response.data;
         if (data.success) {
-          modalVisible.value = false;
+          // modalVisible.value = false;
+          message.success("保存成功!");
 
           // 重新加载列表
           handleQuery();
@@ -303,6 +304,7 @@ export default defineComponent({
     * 新增
     * */
     const add = () => {
+      editor.setHtml("");
       modalVisible.value = true;
       doc.value = {
         ebookId: route.query.ebookId
