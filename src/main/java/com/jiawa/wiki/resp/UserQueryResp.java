@@ -1,6 +1,6 @@
-package com.jiawa.wiki.domain;
+package com.jiawa.wiki.resp;
 
-public class User {
+public class UserQueryResp {
     private Long id;
 
     private String loginName;
