@@ -80,6 +80,11 @@
             <a-input v-model:value="doc.sort" placeholder="顺序" />
           </a-form-item>
           <a-form-item>
+            <a-button type="primary" @click="handlePreviewContent()">
+              <EyeOutlined /> 内容预览
+            </a-button>
+          </a-form-item>
+          <a-form-item>
             <div id="editor—wrapper">
               <div id="toolbar-container"><!-- 工具栏 --></div>
               <div id="editor-container"><!-- 编辑器 --></div>
@@ -88,6 +93,10 @@
         </a-form>
       </a-col>
     </a-row>
+
+    <a-drawer width="900" placement="right" :closable="false" :visible="drawerVisible" @close="onDrawerClose">
+      <div class="editor-content-view" :innerHTML="previewHtml"></div>
+    </a-drawer>
   </a-layout-content>
 
 <!--  <a-modal
@@ -340,6 +349,18 @@ export default defineComponent({
       })
     };
 
+    // ----------------富文本预览--------------
+    const drawerVisible = ref(false);
+    const previewHtml = ref();
+    const handlePreviewContent = () => {
+      const html = editor.getHtml();
+      previewHtml.value = html;
+      drawerVisible.value = true;
+    };
+    const onDrawerClose = () => {
+      drawerVisible.value = false;
+    };
+
     onMounted(() => {
       handleQuery();
 
@@ -376,6 +397,11 @@ export default defineComponent({
       treeSelectData,
 
       editorConfig,
+
+      drawerVisible,
+      previewHtml,
+      handlePreviewContent,
+      onDrawerClose,
     }
   }
 });
