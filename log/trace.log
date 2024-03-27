@@ -1966,3 +1966,167 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.serv
 2024-03-27 19:43:11.426 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
 2024-03-27 19:43:11.426 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
 2024-03-27 19:43:11.430 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2024-03-27 19:45:16.754 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-03-27 19:45:16.793 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_131 on LAPTOP-3T1799K6 with PID 6964 (D:\IDEA\projects\wiki\target\classes started by shs in D:\IDEA\projects\wiki)
+2024-03-27 19:45:16.793 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-03-27 19:45:16.925 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-27 19:45:16.925 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-27 19:45:19.785 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-27 19:45:19.791 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-27 19:45:19.875 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2024-03-27 19:45:21.932 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-03-27 19:45:21.949 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-03-27 19:45:21.951 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-03-27 19:45:21.951 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-03-27 19:45:22.131 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-03-27 19:45:22.133 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 5207 ms
+2024-03-27 19:45:24.161 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-27 19:45:24.790 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-03-27 19:45:24.897 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-03-27 19:45:24.937 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-03-27 19:45:24.961 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-03-27 19:45:24.978 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 9.062 seconds (JVM running for 13.532)
+2024-03-27 19:45:34.458 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-27 19:45:34.458 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-03-27 19:45:34.459 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-03-27 19:45:34.516 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157633090949120[0;39m ------------- 开始 -------------
+2024-03-27 19:45:34.517 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157633090949120[0;39m 请求地址: http://localhost:8880/doc/all/4 GET
+2024-03-27 19:45:34.518 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157633090949120[0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2024-03-27 19:45:34.519 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157633090949120[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:45:34.519 INFO  com.jiawa.wiki.websocket.WebSocketServer          :32   [32m                  [0;39m 有新连接：token：riHchfjc2f，session id：0，当前连接数：1
+2024-03-27 19:45:34.563 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157633090949120[0;39m 请求参数: [4]
+2024-03-27 19:45:34.623 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m428157633090949120[0;39m HikariPool-1 - Starting...
+2024-03-27 19:45:34.877 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m428157633090949120[0;39m HikariPool-1 - Start completed.
+2024-03-27 19:45:34.956 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157633090949120[0;39m 返回结果: {"content":[{"ebookId":4,"id":428154847376838657,"name":"MySQL初级","parent":0,"sort":2,"viewCount":1,"voteCount":1}],"success":true}
+2024-03-27 19:45:34.957 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157633090949120[0;39m ------------- 结束 耗时：444 ms -------------
+2024-03-27 19:45:35.014 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428157635192295424[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:45:35.032 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428157635192295424[0;39m 更新电子书下的文档数据结束，耗时：18毫秒
+2024-03-27 19:45:35.056 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157635368456192[0;39m ------------- 开始 -------------
+2024-03-27 19:45:35.056 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157635368456192[0;39m 请求地址: http://localhost:8880/doc/find-content/428154847376838657 GET
+2024-03-27 19:45:35.058 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157635368456192[0;39m 类名方法: com.jiawa.wiki.controller.DocController.findContent
+2024-03-27 19:45:35.058 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157635368456192[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:45:35.058 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157635368456192[0;39m 请求参数: [428154847376838657]
+2024-03-27 19:45:35.099 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157635368456192[0;39m 返回结果: {"content":"<blockquote>聚合函数</blockquote>","success":true}
+2024-03-27 19:45:35.100 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157635368456192[0;39m ------------- 结束 耗时：44 ms -------------
+2024-03-27 19:45:36.520 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157641508917248[0;39m ------------- 开始 -------------
+2024-03-27 19:45:36.521 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157641508917248[0;39m 请求地址: http://localhost:8880/doc/vote/428154847376838657 GET
+2024-03-27 19:45:36.521 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157641508917248[0;39m 类名方法: com.jiawa.wiki.controller.DocController.vote
+2024-03-27 19:45:36.521 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157641508917248[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:45:36.521 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157641508917248[0;39m 请求参数: [428154847376838657]
+2024-03-27 19:45:38.053 INFO  com.jiawa.wiki.util.RedisUtil                     :28   [32m428157641508917248[0;39m key已存在：DOC_VOTE_428154847376838657_0:0:0:0:0:0:0:1
+2024-03-27 19:45:38.055 WARN  c.jiawa.wiki.controller.ControllerExceptionHandler:44   [32m428157641508917248[0;39m 业务异常：您已点赞过
+2024-03-27 19:45:38.057 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m428157641508917248[0;39m Resolved [com.jiawa.wiki.exception.BusinessException: 您已点赞过]
+2024-03-27 19:45:40.611 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157658667814912[0;39m ------------- 开始 -------------
+2024-03-27 19:45:40.611 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157658667814912[0;39m 请求地址: http://localhost:8880/category/all GET
+2024-03-27 19:45:40.612 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157658667814912[0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2024-03-27 19:45:40.612 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157658667814912[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:45:40.613 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157658667814912[0;39m 请求参数: []
+2024-03-27 19:45:40.682 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157658667814912[0;39m 返回结果: {"content":[{"id":426949619533090816,"name":"test1","parent":100,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2024-03-27 19:45:40.683 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157658667814912[0;39m ------------- 结束 耗时：72 ms -------------
+2024-03-27 19:45:40.800 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157659460538368[0;39m ------------- 开始 -------------
+2024-03-27 19:45:40.802 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157659460538368[0;39m 请求地址: http://localhost:8880/ebook/list GET
+2024-03-27 19:45:40.802 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157659460538368[0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2024-03-27 19:45:40.802 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157659460538368[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:45:40.807 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157659460538368[0;39m 请求参数: [{"page":1,"size":10}]
+2024-03-27 19:45:40.912 INFO  com.jiawa.wiki.service.EbookService               :52   [32m428157659460538368[0;39m 总行数：7
+2024-03-27 19:45:40.913 INFO  com.jiawa.wiki.service.EbookService               :53   [32m428157659460538368[0;39m 总页数：1
+2024-03-27 19:45:40.952 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157659460538368[0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover2.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":6,"id":1,"name":"Spring Boot 入门教程","viewCount":5,"voteCount":2},{"category1Id":100,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":1,"id":2,"name":"Vue 入门教程","viewCount":9,"voteCount":4},{"category1Id":300,"category2Id":301,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":4,"id":3,"name":"Python 入门教程","viewCount":12,"voteCount":4},{"category1Id":400,"category2Id":401,"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":1,"id":4,"name":"MySQL入门教程","viewCount":1,"voteCount":1},{"category1Id":2,"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","docCount":0,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0},{"category1Id":66,"category2Id":2222,"description":"好好学呀","id":425555736857284608,"name":"Redis入门"},{"category1Id":500,"category2Id":502,"description":"学好高中数学","id":427718421564755968,"name":"高中数学全解"}],"total":7},"success":true}
+2024-03-27 19:45:40.953 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157659460538368[0;39m ------------- 结束 耗时：153 ms -------------
+2024-03-27 19:45:43.349 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157670147624960[0;39m ------------- 开始 -------------
+2024-03-27 19:45:43.349 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157670147624960[0;39m 请求地址: http://localhost:8880/doc/all/3 GET
+2024-03-27 19:45:43.350 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157670147624960[0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2024-03-27 19:45:43.350 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157670147624960[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:45:43.351 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157670147624960[0;39m 请求参数: [3]
+2024-03-27 19:45:43.356 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157670147624960[0;39m 返回结果: {"content":[{"ebookId":3,"id":428153467253690369,"name":"Python高级","parent":0,"sort":2,"viewCount":5,"voteCount":1},{"ebookId":3,"id":428152314147246080,"name":"Python中级","parent":0,"sort":21,"viewCount":5,"voteCount":1},{"ebookId":3,"id":428154372908781568,"name":"Python开发工具","parent":428153962999451648,"sort":22,"viewCount":1,"voteCount":1},{"ebookId":3,"id":428153962999451648,"name":"Python初级","parent":0,"sort":23,"viewCount":1,"voteCount":1}],"success":true}
+2024-03-27 19:45:43.357 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157670147624960[0;39m ------------- 结束 耗时：9 ms -------------
+2024-03-27 19:46:03.307 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2024-03-27 19:46:03.307 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8880/doc/save
+2024-03-27 19:46:03.308 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：428153295073316864
+2024-03-27 19:46:03.312 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试","token":"428153295073316864"}
+2024-03-27 19:46:03.339 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157753995956224[0;39m ------------- 开始 -------------
+2024-03-27 19:46:03.340 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157753995956224[0;39m 请求地址: http://localhost:8880/doc/save POST
+2024-03-27 19:46:03.340 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157753995956224[0;39m 类名方法: com.jiawa.wiki.controller.DocController.save
+2024-03-27 19:46:03.340 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157753995956224[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:46:03.342 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157753995956224[0;39m 请求参数: [{"content":"<blockquote>环境变量</blockquote>","ebookId":3,"name":"Python环境配置","parent":428153962999451648,"sort":22}]
+2024-03-27 19:46:03.453 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157753995956224[0;39m 返回结果: {"success":true}
+2024-03-27 19:46:03.453 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157753995956224[0;39m ------------- 结束 耗时：114 ms -------------
+2024-03-27 19:46:03.455 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :64   [32m428157753995956224[0;39m ------------- LoginInterceptor 结束 耗时：148 ms -------------
+2024-03-27 19:46:03.463 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157754516049920[0;39m ------------- 开始 -------------
+2024-03-27 19:46:03.464 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157754516049920[0;39m 请求地址: http://localhost:8880/doc/all/3 GET
+2024-03-27 19:46:03.464 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157754516049920[0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2024-03-27 19:46:03.465 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157754516049920[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:46:03.465 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157754516049920[0;39m 请求参数: [3]
+2024-03-27 19:46:03.468 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157754516049920[0;39m 返回结果: {"content":[{"ebookId":3,"id":428153467253690369,"name":"Python高级","parent":0,"sort":2,"viewCount":5,"voteCount":1},{"ebookId":3,"id":428152314147246080,"name":"Python中级","parent":0,"sort":21,"viewCount":5,"voteCount":1},{"ebookId":3,"id":428154372908781568,"name":"Python开发工具","parent":428153962999451648,"sort":22,"viewCount":1,"voteCount":1},{"ebookId":3,"id":428157754029510656,"name":"Python环境配置","parent":428153962999451648,"sort":22,"viewCount":0,"voteCount":0},{"ebookId":3,"id":428153962999451648,"name":"Python初级","parent":0,"sort":23,"viewCount":1,"voteCount":1}],"success":true}
+2024-03-27 19:46:03.468 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157754516049920[0;39m ------------- 结束 耗时：5 ms -------------
+2024-03-27 19:46:05.017 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428157761033998336[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:46:05.181 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428157761033998336[0;39m 更新电子书下的文档数据结束，耗时：164毫秒
+2024-03-27 19:46:05.514 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157763118567424[0;39m ------------- 开始 -------------
+2024-03-27 19:46:05.514 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157763118567424[0;39m 请求地址: http://localhost:8880/category/all GET
+2024-03-27 19:46:05.515 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157763118567424[0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2024-03-27 19:46:05.516 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157763118567424[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:46:05.516 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157763118567424[0;39m 请求参数: []
+2024-03-27 19:46:05.520 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2024-03-27 19:46:05.521 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8880/ebook-snapshot/get-30-statistic
+2024-03-27 19:46:05.521 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：428153295073316864
+2024-03-27 19:46:05.522 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157763118567424[0;39m 返回结果: {"content":[{"id":426949619533090816,"name":"test1","parent":100,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2024-03-27 19:46:05.522 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157763118567424[0;39m ------------- 结束 耗时：8 ms -------------
+2024-03-27 19:46:05.534 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2024-03-27 19:46:05.536 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8880/ebook-snapshot/get-statistic
+2024-03-27 19:46:05.536 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：428153295073316864
+2024-03-27 19:46:05.537 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试","token":"428153295073316864"}
+2024-03-27 19:46:05.538 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试","token":"428153295073316864"}
+2024-03-27 19:46:05.541 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :64   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：20 ms -------------
+2024-03-27 19:46:05.541 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :64   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：5 ms -------------
+2024-03-27 19:46:05.548 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2024-03-27 19:46:05.548 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2024-03-27 19:46:05.548 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8880/error
+2024-03-27 19:46:05.548 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8880/error
+2024-03-27 19:46:05.548 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：428153295073316864
+2024-03-27 19:46:05.548 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：428153295073316864
+2024-03-27 19:46:05.551 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试","token":"428153295073316864"}
+2024-03-27 19:46:05.551 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :56   [32m                  [0;39m 已登录：{"id":1,"loginName":"test","name":"测试","token":"428153295073316864"}
+2024-03-27 19:46:05.569 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :64   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：21 ms -------------
+2024-03-27 19:46:05.569 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :64   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：21 ms -------------
+2024-03-27 19:46:07.329 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157770731229184[0;39m ------------- 开始 -------------
+2024-03-27 19:46:07.330 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157770731229184[0;39m 请求地址: http://localhost:8880/ebook/list GET
+2024-03-27 19:46:07.330 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157770731229184[0;39m 类名方法: com.jiawa.wiki.controller.EbookController.list
+2024-03-27 19:46:07.330 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157770731229184[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:46:07.331 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157770731229184[0;39m 请求参数: [{"categoryId2":301,"page":1,"size":1000}]
+2024-03-27 19:46:07.339 INFO  com.jiawa.wiki.service.EbookService               :52   [32m428157770731229184[0;39m 总行数：1
+2024-03-27 19:46:07.340 INFO  com.jiawa.wiki.service.EbookService               :53   [32m428157770731229184[0;39m 总页数：1
+2024-03-27 19:46:07.341 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157770731229184[0;39m 返回结果: {"content":{"list":[{"category1Id":300,"category2Id":301,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":5,"id":3,"name":"Python 入门教程","viewCount":12,"voteCount":4}],"total":1},"success":true}
+2024-03-27 19:46:07.342 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157770731229184[0;39m ------------- 结束 耗时：13 ms -------------
+2024-03-27 19:46:09.035 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157777886711808[0;39m ------------- 开始 -------------
+2024-03-27 19:46:09.036 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157777886711808[0;39m 请求地址: http://localhost:8880/doc/all/3 GET
+2024-03-27 19:46:09.037 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157777886711808[0;39m 类名方法: com.jiawa.wiki.controller.DocController.all
+2024-03-27 19:46:09.037 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157777886711808[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:46:09.037 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157777886711808[0;39m 请求参数: [3]
+2024-03-27 19:46:09.042 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157777886711808[0;39m 返回结果: {"content":[{"ebookId":3,"id":428153467253690369,"name":"Python高级","parent":0,"sort":2,"viewCount":5,"voteCount":1},{"ebookId":3,"id":428152314147246080,"name":"Python中级","parent":0,"sort":21,"viewCount":5,"voteCount":1},{"ebookId":3,"id":428154372908781568,"name":"Python开发工具","parent":428153962999451648,"sort":22,"viewCount":1,"voteCount":1},{"ebookId":3,"id":428157754029510656,"name":"Python环境配置","parent":428153962999451648,"sort":22,"viewCount":0,"voteCount":0},{"ebookId":3,"id":428153962999451648,"name":"Python初级","parent":0,"sort":23,"viewCount":1,"voteCount":1}],"success":true}
+2024-03-27 19:46:09.043 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157777886711808[0;39m ------------- 结束 耗时：8 ms -------------
+2024-03-27 19:46:09.054 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157777966403584[0;39m ------------- 开始 -------------
+2024-03-27 19:46:09.055 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157777966403584[0;39m 请求地址: http://localhost:8880/doc/find-content/428153467253690369 GET
+2024-03-27 19:46:09.055 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157777966403584[0;39m 类名方法: com.jiawa.wiki.controller.DocController.findContent
+2024-03-27 19:46:09.055 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157777966403584[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:46:09.055 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157777966403584[0;39m 请求参数: [428153467253690369]
+2024-03-27 19:46:09.123 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157777966403584[0;39m 返回结果: {"content":"<blockquote>元组数组</blockquote>","success":true}
+2024-03-27 19:46:09.125 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157777966403584[0;39m ------------- 结束 耗时：71 ms -------------
+2024-03-27 19:46:09.718 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157780751421440[0;39m ------------- 开始 -------------
+2024-03-27 19:46:09.718 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157780751421440[0;39m 请求地址: http://localhost:8880/doc/find-content/428157754029510656 GET
+2024-03-27 19:46:09.719 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157780751421440[0;39m 类名方法: com.jiawa.wiki.controller.DocController.findContent
+2024-03-27 19:46:09.719 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157780751421440[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:46:09.719 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157780751421440[0;39m 请求参数: [428157754029510656]
+2024-03-27 19:46:09.773 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157780751421440[0;39m 返回结果: {"content":"<blockquote>环境变量</blockquote>","success":true}
+2024-03-27 19:46:09.773 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157780751421440[0;39m ------------- 结束 耗时：55 ms -------------
+2024-03-27 19:46:11.298 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428157787378421760[0;39m ------------- 开始 -------------
+2024-03-27 19:46:11.299 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428157787378421760[0;39m 请求地址: http://localhost:8880/doc/vote/428157754029510656 GET
+2024-03-27 19:46:11.299 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428157787378421760[0;39m 类名方法: com.jiawa.wiki.controller.DocController.vote
+2024-03-27 19:46:11.299 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428157787378421760[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:46:11.299 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428157787378421760[0;39m 请求参数: [428157754029510656]
+2024-03-27 19:46:11.300 INFO  com.jiawa.wiki.util.RedisUtil                     :31   [32m428157787378421760[0;39m key不存在，放入：DOC_VOTE_428157754029510656_0:0:0:0:0:0:0:1，过期 5000 秒
+2024-03-27 19:46:11.346 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428157787378421760[0;39m 返回结果: {"success":true}
+2024-03-27 19:46:11.347 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428157787378421760[0;39m ------------- 结束 耗时：49 ms -------------
+2024-03-27 19:46:11.355 INFO  com.jiawa.wiki.websocket.WebSocketServer          :71   [32m428157787378421760[0;39m 推送消息：riHchfjc2f，内容：【Python环境配置】被点赞！
+2024-03-27 19:46:35.006 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428157886816980992[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:46:35.062 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428157886816980992[0;39m 更新电子书下的文档数据结束，耗时：56毫秒
+2024-03-27 19:47:05.002 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428158012629323776[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:47:05.006 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428158012629323776[0;39m 更新电子书下的文档数据结束，耗时：4毫秒
