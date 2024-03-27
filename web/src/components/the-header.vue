@@ -15,7 +15,7 @@
       <a-menu-item key="/admin/category"><router-link to="/admin/category">分类管理</router-link></a-menu-item>
       <a-menu-item key="/about"><router-link to="/about">关于我们</router-link></a-menu-item>
       <a class="login-menu" v-show="user.id">
-        <span>您好：{{ user.name }}</span>
+        您好：{{ user.name }}
       </a>
       <a class="login-menu" v-show="!user.id" @click="showLoginModal">
         <span>登录</span>
@@ -44,6 +44,7 @@
 import { defineComponent, ref, computed } from 'vue';
 import axios from 'axios';
 import { message } from 'ant-design-vue';
+import store from "@/store";
 
 declare let hexMd5: any;
 declare let KEY: any;
@@ -78,6 +79,7 @@ export default defineComponent({
           loginModalVisible.value = false;
           message.success("登录成功！");
           user.value = data.content;
+          store.commit("setUser", data.content);
         } else {
           message.error(data.message);
         }
