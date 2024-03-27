@@ -1,0 +1,377 @@
+2024-03-27 18:44:36.792 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-03-27 18:44:36.801 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_131 on LAPTOP-3T1799K6 with PID 4876 (D:\IDEA\projects\wiki\target\classes started by shs in D:\IDEA\projects\wiki)
+2024-03-27 18:44:36.801 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-03-27 18:44:36.881 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-27 18:44:36.882 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-27 18:44:37.653 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-27 18:44:37.656 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-27 18:44:37.674 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-03-27 18:44:38.621 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-03-27 18:44:38.635 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-03-27 18:44:38.636 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-03-27 18:44:38.636 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-03-27 18:44:38.733 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-03-27 18:44:38.733 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1850 ms
+2024-03-27 18:44:39.761 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-27 18:44:40.301 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-03-27 18:44:40.387 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-03-27 18:44:40.432 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-03-27 18:44:40.450 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-03-27 18:44:40.482 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 4.306 seconds (JVM running for 8.09)
+2024-03-27 18:45:05.006 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428142409835220992[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:45:05.144 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m428142409835220992[0;39m HikariPool-1 - Starting...
+2024-03-27 18:45:05.484 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m428142409835220992[0;39m HikariPool-1 - Start completed.
+2024-03-27 18:45:05.536 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428142409835220992[0;39m 更新电子书下的文档数据结束，耗时：530毫秒
+2024-03-27 18:45:35.006 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428142535664340992[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:45:35.009 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428142535664340992[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:46:05.003 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428142661480878080[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:46:05.005 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428142661480878080[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:46:35.010 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428142787339358208[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:46:35.103 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428142787339358208[0;39m 更新电子书下的文档数据结束，耗时：93毫秒
+2024-03-27 18:47:05.003 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428142913139118080[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:47:05.005 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428142913139118080[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 18:47:35.015 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428143039018569728[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:47:35.018 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428143039018569728[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2024-03-27 18:48:05.015 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428143164847689728[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:48:05.016 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428143164847689728[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 18:48:35.002 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428143290622283776[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:48:35.004 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428143290622283776[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 18:49:05.001 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428143416447209472[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:49:05.007 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428143416447209472[0;39m 更新电子书下的文档数据结束，耗时：5毫秒
+2024-03-27 18:49:35.002 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428143542280523776[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:49:35.004 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428143542280523776[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:50:05.003 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428143668113838080[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:50:05.005 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428143668113838080[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:50:35.014 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428143793989095424[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:50:35.016 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428143793989095424[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:51:05.003 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428143919772078080[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:51:05.103 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428143919772078080[0;39m 更新电子书下的文档数据结束，耗时：99毫秒
+2024-03-27 18:51:35.007 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428144045617975296[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:51:35.009 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428144045617975296[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:52:05.002 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428144171426123776[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:52:05.004 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428144171426123776[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 18:52:35.003 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428144297259438080[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:52:35.006 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428144297259438080[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:53:05.001 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428144423080169472[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:53:05.003 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428144423080169472[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:53:35.014 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428144548963815424[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:53:35.016 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428144548963815424[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 18:54:05.003 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428144674746798080[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:54:05.006 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428144674746798080[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2024-03-27 18:54:35.001 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428144800567529472[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:54:35.008 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428144800567529472[0;39m 更新电子书下的文档数据结束，耗时：7毫秒
+2024-03-27 18:55:05.004 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428144926409232384[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:55:05.030 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428144926409232384[0;39m 更新电子书下的文档数据结束，耗时：26毫秒
+2024-03-27 18:55:35.013 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428145052276101120[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:55:35.014 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428145052276101120[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 18:56:05.016 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428145178117804032[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:56:05.019 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428145178117804032[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2024-03-27 18:56:35.013 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428145303934341120[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:56:35.015 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428145303934341120[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:57:05.006 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428145429734100992[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:57:05.008 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428145429734100992[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:57:35.014 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428145555596775424[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 18:57:35.016 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428145555596775424[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 18:57:54.325 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2024-03-27 18:57:54.328 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-27 18:57:54.329 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-03-27 18:57:54.344 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-03-27 18:57:54.734 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_131 on LAPTOP-3T1799K6 with PID 4876 (D:\IDEA\projects\wiki\target\classes started by shs in D:\IDEA\projects\wiki)
+2024-03-27 18:57:54.735 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-03-27 18:57:54.960 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-27 18:57:54.960 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-27 18:57:54.960 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2024-03-27 18:57:54.996 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jiawa.wiki.mapper]' package. Please check your configuration.
+2024-03-27 18:57:55.240 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-03-27 18:57:55.241 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-03-27 18:57:55.241 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-03-27 18:57:55.241 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-03-27 18:57:55.372 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-03-27 18:57:55.372 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 632 ms
+2024-03-27 18:57:55.438 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-27 18:57:55.617 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IDEA\projects\wiki\target\classes\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\IDEA\projects\wiki\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jiawa.wiki.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.wiki.domain.Category
+2024-03-27 18:57:55.618 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-27 18:57:55.618 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2024-03-27 18:57:55.625 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-27 18:57:56.255 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IDEA\projects\wiki\target\classes\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\IDEA\projects\wiki\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jiawa.wiki.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.wiki.domain.Category
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.jiawa.wiki.config.WikiApplication.main(WikiApplication.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IDEA\projects\wiki\target\classes\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\IDEA\projects\wiki\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jiawa.wiki.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.wiki.domain.Category
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 25 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\IDEA\projects\wiki\target\classes\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\IDEA\projects\wiki\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jiawa.wiki.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.wiki.domain.Category
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:612)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:490)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:632)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$172ae10f.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$172ae10f$$FastClassBySpringCGLIB$$69536665.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$172ae10f.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\IDEA\projects\wiki\target\classes\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jiawa.wiki.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.wiki.domain.Category
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:610)
+	... 39 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jiawa.wiki.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.wiki.domain.Category
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 41 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jiawa.wiki.domain.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.wiki.domain.Category
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 45 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.jiawa.wiki.domain.Category
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 47 common frames omitted
+2024-03-27 18:58:00.371 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_131 on LAPTOP-3T1799K6 with PID 4876 (D:\IDEA\projects\wiki\target\classes started by shs in D:\IDEA\projects\wiki)
+2024-03-27 18:58:00.371 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-03-27 18:58:00.666 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.jiawa.wiki.config.WikiApplication.main(WikiApplication.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.jiawa.wiki.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@60d99053]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 43 common frames omitted
+2024-03-27 18:58:00.668 WARN  org.springframework.boot.SpringApplication        :828  [32m                  [0;39m Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.jiawa.wiki.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@60d99053]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.jiawa.wiki.config.WikiApplication.main(WikiApplication.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 30 common frames omitted
+2024-03-27 19:04:17.513 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2024-03-27 19:04:17.523 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_131 on LAPTOP-3T1799K6 with PID 12780 (D:\IDEA\projects\wiki\target\classes started by shs in D:\IDEA\projects\wiki)
+2024-03-27 19:04:17.554 INFO  com.jiawa.wiki.config.WikiApplication             :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-03-27 19:04:17.735 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-27 19:04:17.736 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-27 19:04:20.290 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-27 19:04:20.296 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-27 19:04:20.341 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-03-27 19:04:21.758 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2024-03-27 19:04:21.778 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2024-03-27 19:04:21.778 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-03-27 19:04:21.780 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-03-27 19:04:21.961 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-03-27 19:04:21.962 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 4222 ms
+2024-03-27 19:04:23.728 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-27 19:04:24.377 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2024-03-27 19:04:24.503 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2024-03-27 19:04:24.536 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2024-03-27 19:04:24.566 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2024-03-27 19:04:24.590 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 8.309 seconds (JVM running for 11.863)
+2024-03-27 19:04:35.010 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428147317187678208[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:04:35.047 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m428147317187678208[0;39m HikariPool-1 - Starting...
+2024-03-27 19:04:35.353 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m428147317187678208[0;39m HikariPool-1 - Start completed.
+2024-03-27 19:04:35.447 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428147317187678208[0;39m 更新电子书下的文档数据结束，耗时：436毫秒
+2024-03-27 19:05:05.003 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428147442987438080[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:05:05.006 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428147442987438080[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:05:35.008 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428147568837529600[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:05:35.011 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428147568837529600[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2024-03-27 19:06:05.002 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428147694641483776[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:06:05.004 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428147694641483776[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:06:35.012 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428147820512546816[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:06:35.015 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428147820512546816[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:07:05.006 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428147946316500992[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:07:05.008 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428147946316500992[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:07:35.014 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428148072179175424[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:07:35.018 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428148072179175424[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:08:05.012 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428148197999906816[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:08:05.014 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428148197999906816[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:08:35.003 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428148323791278080[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:08:35.005 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428148323791278080[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 19:09:05.016 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428148449674924032[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:09:05.018 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428148449674924032[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:09:29.306 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-27 19:09:29.306 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-03-27 19:09:29.307 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-03-27 19:09:29.394 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2024-03-27 19:09:29.395 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8880/
+2024-03-27 19:09:29.395 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2024-03-27 19:09:29.395 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2024-03-27 19:09:35.009 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428148575474683904[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:09:35.024 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428148575474683904[0;39m 更新电子书下的文档数据结束，耗时：15毫秒
+2024-03-27 19:10:05.011 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428148701312192512[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:10:05.013 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428148701312192512[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:10:35.003 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428148827107758080[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:10:35.005 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428148827107758080[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 19:11:05.015 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428148952987209728[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:11:05.018 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428148952987209728[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:11:35.014 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428149078812135424[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:11:35.015 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428149078812135424[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 19:12:05.012 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428149204632866816[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:12:05.016 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428149204632866816[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2024-03-27 19:12:35.005 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428149330432626688[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:12:35.007 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428149330432626688[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:13:05.009 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428149456278523904[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:13:05.010 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428149456278523904[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 19:13:35.012 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428149582120226816[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:13:35.014 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428149582120226816[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:14:05.009 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428149707936763904[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:14:05.014 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428149707936763904[0;39m 更新电子书下的文档数据结束，耗时：5毫秒
+2024-03-27 19:14:35.011 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428149833774272512[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:14:35.013 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428149833774272512[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:15:05.008 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428149959590809600[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:15:05.010 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428149959590809600[0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2024-03-27 19:15:28.773 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2024-03-27 19:15:28.773 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :29   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2024-03-27 19:15:28.774 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8880/ebook-snapshot/get-statistic
+2024-03-27 19:15:28.774 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :40   [32m                  [0;39m 接口登录拦截：，path：http://localhost:8880/ebook-snapshot/get-30-statistic
+2024-03-27 19:15:28.774 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2024-03-27 19:15:28.774 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :44   [32m                  [0;39m 登录校验开始，token：null
+2024-03-27 19:15:28.775 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2024-03-27 19:15:28.775 INFO  com.jiawa.wiki.interceptor.LoginInterceptor       :46   [32m                  [0;39m token为空，请求被拦截
+2024-03-27 19:15:29.111 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428150060656758784[0;39m ------------- 开始 -------------
+2024-03-27 19:15:29.112 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428150060656758784[0;39m 请求地址: http://localhost:8880/category/all GET
+2024-03-27 19:15:29.112 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428150060656758784[0;39m 类名方法: com.jiawa.wiki.controller.CategoryController.all
+2024-03-27 19:15:29.112 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428150060656758784[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:15:29.692 INFO  com.jiawa.wiki.websocket.WebSocketServer          :32   [32m                  [0;39m 有新连接：token：NPDdrDF5yu，session id：0，当前连接数：1
+2024-03-27 19:15:30.066 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428150060656758784[0;39m 请求参数: []
+2024-03-27 19:15:31.169 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428150060656758784[0;39m 返回结果: {"content":[{"id":426949619533090816,"name":"test1","parent":100,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2024-03-27 19:15:31.170 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428150060656758784[0;39m ------------- 结束 耗时：2067 ms -------------
+2024-03-27 19:15:35.002 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428150085394763776[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:15:35.004 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428150085394763776[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2024-03-27 19:15:37.971 INFO  com.jiawa.wiki.aspect.LogAspect                   :53   [32m428150097847652352[0;39m ------------- 开始 -------------
+2024-03-27 19:15:37.971 INFO  com.jiawa.wiki.aspect.LogAspect                   :54   [32m428150097847652352[0;39m 请求地址: http://localhost:8880/user/login POST
+2024-03-27 19:15:37.971 INFO  com.jiawa.wiki.aspect.LogAspect                   :55   [32m428150097847652352[0;39m 类名方法: com.jiawa.wiki.controller.UserController.login
+2024-03-27 19:15:37.972 INFO  com.jiawa.wiki.aspect.LogAspect                   :56   [32m428150097847652352[0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-03-27 19:15:37.973 INFO  com.jiawa.wiki.aspect.LogAspect                   :78   [32m428150097847652352[0;39m 请求参数: [{"loginName":"test"}]
+2024-03-27 19:15:38.135 INFO  com.jiawa.wiki.controller.UserController          :78   [32m428150097847652352[0;39m 生成单点登录token：428150098535518208，并放入redis中
+2024-03-27 19:15:42.210 INFO  com.jiawa.wiki.aspect.LogAspect                   :90   [32m428150097847652352[0;39m 返回结果: {"content":{"id":1,"loginName":"test","name":"测试","token":"428150098535518208"},"success":true}
+2024-03-27 19:15:42.211 INFO  com.jiawa.wiki.aspect.LogAspect                   :91   [32m428150097847652352[0;39m ------------- 结束 耗时：4240 ms -------------
+2024-03-27 19:16:05.012 INFO  com.jiawa.wiki.job.DocJob                         :31   [32m428150211265826816[0;39m 更新电子书下的文档数据 - 开始
+2024-03-27 19:16:05.014 INFO  com.jiawa.wiki.job.DocJob                         :34   [32m428150211265826816[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
