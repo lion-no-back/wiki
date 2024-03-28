@@ -190,9 +190,15 @@ export default defineComponent({
     const modalVisible = ref(false);
     const modalLoading = ref(false);
     const handleModalOk = () => {
-      modalLoading.value = true;
-      ebook.value.category1Id = categoryIds.value[0];
-      ebook.value.category2Id = categoryIds.value[1];
+      modalLoading.value = true
+      console.log("排错" + categoryIds.value);
+      if (categoryIds.value != null) {
+        ebook.value.category1Id = categoryIds.value[0];
+        ebook.value.category2Id = categoryIds.value[1];
+      } else {
+        ebook.value.category1Id = "";
+        ebook.value.category2Id = "";
+      }
       axios.post("/ebook/save", ebook.value).then((response) => {
         modalLoading.value = false;
         const data = response.data;
