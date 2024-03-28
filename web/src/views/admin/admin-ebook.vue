@@ -191,7 +191,7 @@ export default defineComponent({
     const modalLoading = ref(false);
     const handleModalOk = () => {
       modalLoading.value = true
-      console.log("排错" + categoryIds.value);
+      // 新增电子书时不选择分类
       if (categoryIds.value != null) {
         ebook.value.category1Id = categoryIds.value[0];
         ebook.value.category2Id = categoryIds.value[1];
