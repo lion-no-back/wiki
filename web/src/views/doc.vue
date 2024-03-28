@@ -203,4 +203,16 @@ export default defineComponent({
   padding: 15px;
   text-align: center;
 }
+
+/* 图片自适应 */
+.editor-content-view img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 视频自适应 */
+.editor-content-view iframe {
+  width: 100%;
+  height: 400px;
+}
 </style>
