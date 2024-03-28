@@ -6,11 +6,6 @@
       <div>2. 有文档被点赞会收到实时通知哦！</div>
       <div>3. 左侧菜单是动态加载的，登录后在分类管理可配置</div>
       <div>4. 文档树可无限级扩展，支持文字、图片、<b>视频</b></div>
-      <div>你也想有个WIKI知识库吗？，<b>配套视频课程</b>：
-        <a href="https://coding.imooc.com/class/474.html" target="_blank">
-        《SpringBoot知识体系+Vue3全家桶 前后端分离 实战WIKI知识库系统》
-        </a>
-      </div>
     </div>
 
     <a-row>
@@ -113,8 +108,6 @@
   import { defineComponent, ref, onMounted } from 'vue'
   import axios from 'axios';
 
-  declare let echarts: any;
-
   export default defineComponent({
     name: 'the-welcome',
     setup () {
@@ -122,6 +115,7 @@
       statistic.value = {};
       const getStatistic = () => {
         axios.get('/ebook-snapshot/get-statistic').then((response) => {
+          // 接口返回数组：[昨天,今天]，但要考虑到初始化时昨天没有数据
           const data = response.data;
           if (data.success) {
             const statisticResp = data.content;
@@ -142,121 +136,8 @@
         });
       };
 
-      const init30DayEcharts = (list: any) => {
-        // 发布生产后出现问题：切到别的页面，再切回首页，报表显示不出来
-        // 解决方法：把原来的id=main的区域清空，重新初始化
-        const mainDom = document.getElementById('main-col');
-        if (mainDom) {
-          mainDom.innerHTML = '<div id="main" style="width: 100%;height:300px;"></div>';
-        }
-        // 基于准备好的dom，初始化echarts实例
-        const myChart = echarts.init(document.getElementById('main'));
-
-        const xAxis = [];
-        const seriesView = [];
-        const seriesVote = [];
-        for (let i = 0; i < list.length; i++) {
-          const record = list[i];
-          xAxis.push(record.date);
-          seriesView.push(record.viewIncrease);
-          seriesVote.push(record.voteIncrease);
-        }
-
-        // 指定图表的配置项和数据
-        const option = {
-          title: {
-            text: '30天趋势图'
-          },
-          tooltip: {
-            trigger: 'axis'
-          },
-          legend: {
-            data: ['总阅读量', '总点赞量']
-          },
-          grid: {
-            left: '1%',
-            right: '3%',
-            bottom: '3%',
-            containLabel: true
-          },
-          toolbox: {
-            feature: {
-              saveAsImage: {}
-            }
-          },
-          xAxis: {
-            type: 'category',
-            boundaryGap: false,
-            data: xAxis
-          },
-          yAxis: {
-            type: 'value'
-          },
-          series: [
-            {
-              name: '总阅读量',
-              type: 'line',
-              // stack: '总量', 不堆叠
-              data: seriesView,
-              smooth: true
-            },
-            {
-              name: '总点赞量',
-              type: 'line',
-              // stack: '总量', 不堆叠
-              data: seriesVote,
-              smooth: true
-            }
-          ]
-        };
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-      };
-
-      const get30DayStatistic = () => {
-        axios.get('/ebook-snapshot/get-30-statistic').then((response) => {
-          const data = response.data;
-          if (data.success) {
-            const statisticList = data.content;
-
-            init30DayEcharts(statisticList)
-          }
-        });
-      };
-
-      const testEcharts = () => {
-        // 基于准备好的dom，初始化echarts实例
-        const myChart = echarts.init(document.getElementById('main'));
-
-        // 指定图表的配置项和数据
-        const option = {
-          title: {
-            text: 'ECharts 入门示例'
-          },
-          tooltip: {},
-          legend: {
-            data:['销量']
-          },
-          xAxis: {
-            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
-          },
-          yAxis: {},
-          series: [{
-            name: '销量',
-            type: 'bar',
-            data: [5, 20, 36, 10, 10, 20]
-          }]
-        };
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-      };
-
       onMounted(() => {
         getStatistic();
-        // testEcharts();
-        get30DayStatistic();
       });
 
       return {
