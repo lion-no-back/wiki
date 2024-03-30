@@ -6,7 +6,9 @@
         mode="horizontal"
         :style="{ lineHeight: '64px' }"
     >
-      <a-menu-item key="/"><router-link to="/">首页</router-link></a-menu-item>
+      <a-menu-item key="/">
+        <router-link to="/">首页</router-link>
+      </a-menu-item>
       <a-menu-item key="/admin/user" v-if="user.id">
         <router-link to="/admin/user">用户管理</router-link>
       </a-menu-item>
@@ -19,6 +21,7 @@
       <a-menu-item key="/about">
         <router-link to="/about">关于我们</router-link>
       </a-menu-item>
+
       <a-popconfirm
           title="确认退出登录?"
           ok-text="是"
@@ -36,7 +39,14 @@
         <span>登录</span>
       </a>
     </a-menu>
-
+    <div style="position: absolute;right: 300px;top:0">
+      <a-input-search
+          v-model:value="keyword"
+          @search="onSearch"
+          placeholder="内容检索"
+          style="border-radius: 3px;width: 300px"
+      />
+    </div>
     <a-modal
         title="登录"
         v-model:visible="loginModalVisible"
@@ -45,20 +55,21 @@
     >
       <a-form :model="loginUser" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
         <a-form-item label="登录名">
-          <a-input v-model:value="loginUser.loginName" />
+          <a-input v-model:value="loginUser.loginName"/>
         </a-form-item>
         <a-form-item label="密码">
-          <a-input v-model:value="loginUser.password" type="password" />
+          <a-input v-model:value="loginUser.password" type="password"/>
         </a-form-item>
       </a-form>
     </a-modal>
+
   </a-layout-header>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from 'vue';
+import {defineComponent, ref, computed} from 'vue';
 import axios from 'axios';
-import { message } from 'ant-design-vue';
+import {message} from 'ant-design-vue';
 import store from "@/store";
 
 declare let hexMd5: any;
@@ -66,10 +77,10 @@ declare let KEY: any;
 
 export default defineComponent({
   name: 'the-header',
-  setup () {
+  setup() {
     // 登录后保存
     const user = computed(() => store.state.user);
-
+    const keyword = ref();
     // 用来登录
     const loginUser = ref({
       loginName: "test",
@@ -113,6 +124,10 @@ export default defineComponent({
       });
     };
 
+    const onSearch = () => {
+      console.log(keyword.value);
+    };
+
     return {
       loginModalVisible,
       loginModalLoading,
@@ -120,31 +135,34 @@ export default defineComponent({
       loginUser,
       login,
       user,
-      logout
+      keyword,
+      logout,
+      onSearch
     }
   }
 });
 </script>
 
 <style>
-  .logo {
-    width: 120px;
-    height: 31px;
-    /*background: rgba(255, 255, 255, 0.2);*/
-    /*margin: 16px 28px 16px 0;*/
-    float: left;
-    color: white;
-    font-size: 18px;
-  }
-  .login-menu {
-    position: absolute;
-    right: 100px;
-    color: white;
-  }
+.logo {
+  width: 120px;
+  height: 31px;
+  /*background: rgba(255, 255, 255, 0.2);*/
+  /*margin: 16px 28px 16px 0;*/
+  float: left;
+  color: white;
+  font-size: 18px;
+}
 
-  .logout {
-    position: absolute;
-    right: 20px;
-    color: white;
-  }
+.login-menu {
+  position: absolute;
+  right: 100px;
+  color: white;
+}
+
+.logout {
+  position: absolute;
+  right: 20px;
+  color: white;
+}
 </style>
